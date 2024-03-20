@@ -1,9 +1,9 @@
 ﻿Console.WriteLine("Hello, World!");
-// WorkWithIntegers();
-// OrderPrecedence();
-// TestLimit();
-// WorkWithDoubles();
-// Decimal();
+WorkWithIntegers();
+OrderPrecedence();
+TestLimit();
+WorkWithDoubles();
+Decimal();
 
 static void TestLimit()
 {
