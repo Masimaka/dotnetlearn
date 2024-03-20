@@ -1,6 +1,6 @@
 # C#
-**/bin/** 
-**/obj/**
+**/bin/*
+**/obj/*
 # Local .terraform directories
 **/.terraform/*
 
