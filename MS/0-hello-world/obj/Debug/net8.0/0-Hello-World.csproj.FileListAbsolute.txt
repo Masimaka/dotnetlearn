@@ -1,0 +1,15 @@
+C:\github\dotnetlearn\MS\0-hello-world\bin\Debug\net8.0\0-Hello-World.exe
+C:\github\dotnetlearn\MS\0-hello-world\bin\Debug\net8.0\0-Hello-World.deps.json
+C:\github\dotnetlearn\MS\0-hello-world\bin\Debug\net8.0\0-Hello-World.runtimeconfig.json
+C:\github\dotnetlearn\MS\0-hello-world\bin\Debug\net8.0\0-Hello-World.dll
+C:\github\dotnetlearn\MS\0-hello-world\bin\Debug\net8.0\0-Hello-World.pdb
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\0-Hello-World.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\0-Hello-World.AssemblyInfoInputs.cache
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\0-Hello-World.AssemblyInfo.cs
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\0-Hello-World.csproj.CoreCompileInputs.cache
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\0-Hello-World.sourcelink.json
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\0-Hello-World.dll
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\refint\0-Hello-World.dll
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\0-Hello-World.pdb
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\0-Hello-World.genruntimeconfig.cache
+C:\github\dotnetlearn\MS\0-hello-world\obj\Debug\net8.0\ref\0-Hello-World.dll
