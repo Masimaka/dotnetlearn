@@ -1,2 +1,2 @@
-dotnet new console -n 3-2-1-console -o .
+dotnet new winforms -n 3-2-winforms -o .
 dotnet add reference ..\lib\HelloLib.csproj
