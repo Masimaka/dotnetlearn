@@ -1,7 +1,8 @@
 using System;
 using System.Windows.Forms;
+using HelloLib;
 
-namespace _3_2_winforms;
+namespace _3_2_2_winforms;
 
 public partial class Form1 : Form
 {
@@ -30,6 +31,8 @@ public partial class Form1 : Form
     // обработчик события
     private void submitButton_Click(object sender, EventArgs e)
     {
-        MessageBox.Show("Hello, " + this.nameTextBox.Text + "!");
+        Hello somevar = new Hello();
+        string greeting = somevar.GetGreeting(this.nameTextBox.Text);
+        MessageBox.Show(greeting);
     }
 }
