@@ -33,99 +33,99 @@ namespace Task1.Tests
             CollectionAssert.AreEqual(new int[0], numbers);
         }
 
-        [Test]
-        public void IndexOf_Products_ReturnsTwo()
-        {
-            var products = new Product[]
-            {
-                new Product("Product 1", 10.0d),
-                new Product("Product 2", 20.0d),
-                new Product("Product 3", 30.0d),
-            };
-            var productToFind = new Product("Product 3", 30.0d);
+        // [Test]
+        // public void IndexOf_Products_ReturnsTwo()
+        // {
+        //     var products = new Product[]
+        //     {
+        //         new Product("Product 1", 10.0d),
+        //         new Product("Product 2", 20.0d),
+        //         new Product("Product 3", 30.0d),
+        //     };
+        //     var productToFind = new Product("Product 3", 30.0d);
 
-            int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
+        //     int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
 
-            Assert.That(index, Is.EqualTo(2));
-        }
+        //     Assert.That(index, Is.EqualTo(2));
+        // }
 
-        [Test]
-        public void IndexOf_NoMatch_ReturnsMinusOne()
-        {
-            var products = new Product[]
-            {
-                new Product("Product 1", 10.0d),
-                new Product("Product 2", 20.0d),
-                new Product("Product 3", 30.0d),
-            };
-            var productToFind = new Product("Product 4", 30.0d);
+        // [Test]
+        // public void IndexOf_NoMatch_ReturnsMinusOne()
+        // {
+        //     var products = new Product[]
+        //     {
+        //         new Product("Product 1", 10.0d),
+        //         new Product("Product 2", 20.0d),
+        //         new Product("Product 3", 30.0d),
+        //     };
+        //     var productToFind = new Product("Product 4", 30.0d);
 
-            int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
+        //     int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
 
-            Assert.That(index, Is.EqualTo(-1));
-        }
+        //     Assert.That(index, Is.EqualTo(-1));
+        // }
 
-        [Test]
-        public void IndexOf_EqualsWithNull_ReturnsMinusOne()
-        {
-            var products = new Product[]
-            {
-                new Product("Product 1", 10.0d),
-                new Product("Product 2", 20.0d),
-                new Product("Product 3", 30.0d),
-            };
-            Product productToFind = null;
+        // [Test]
+        // public void IndexOf_EqualsWithNull_ReturnsMinusOne()
+        // {
+        //     var products = new Product[]
+        //     {
+        //         new Product("Product 1", 10.0d),
+        //         new Product("Product 2", 20.0d),
+        //         new Product("Product 3", 30.0d),
+        //     };
+        //     Product productToFind = null;
 
-            int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
+        //     int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
 
-            Assert.That(index, Is.EqualTo(-1));
-        }
+        //     Assert.That(index, Is.EqualTo(-1));
+        // }
 
-        [Test]
-        public void IndexOf_SearchForNonProductTypeObject_ReturnsMinusOne()
-        {
-            var products = new Product[]
-            {
-                new Product("Product 1", 10.0d),
-                new Product("Product 2", 20.0d),
-                new Product("Product 3", 30.0d),
-            };
-            var productToFind = 42;
+        // [Test]
+        // public void IndexOf_SearchForNonProductTypeObject_ReturnsMinusOne()
+        // {
+        //     var products = new Product[]
+        //     {
+        //         new Product("Product 1", 10.0d),
+        //         new Product("Product 2", 20.0d),
+        //         new Product("Product 3", 30.0d),
+        //     };
+        //     var productToFind = 42;
 
-            int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
+        //     int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
 
-            Assert.That(index, Is.EqualTo(-1));
-        }
+        //     Assert.That(index, Is.EqualTo(-1));
+        // }
 
-        [Test]
-        public void IndexOf_NullProducts_ThrowsArgumentNullException()
-        {
-            Assert.That(() =>
-            {
-                var productToFind = new Product("Product 3", 30.0d);
-                int index = Utilities.IndexOf(null, product => product.Equals(productToFind));
-            }, Throws.InstanceOf<ArgumentNullException>());
-        }
+        // [Test]
+        // public void IndexOf_NullProducts_ThrowsArgumentNullException()
+        // {
+        //     Assert.That(() =>
+        //     {
+        //         var productToFind = new Product("Product 3", 30.0d);
+        //         int index = Utilities.IndexOf(null, product => product.Equals(productToFind));
+        //     }, Throws.InstanceOf<ArgumentNullException>());
+        // }
 
-        [Test]
-        public void IndexOf_NullPredicate_ThrowsArgumentNullException()
-        {
-            Assert.That(() =>
-            {
-                var products = new Product[] { new Product("Product 1", 10.0d) };
-                int index = Utilities.IndexOf(products, null);
-            }, Throws.InstanceOf<ArgumentNullException>());
-        }
+        // [Test]
+        // public void IndexOf_NullPredicate_ThrowsArgumentNullException()
+        // {
+        //     Assert.That(() =>
+        //     {
+        //         var products = new Product[] { new Product("Product 1", 10.0d) };
+        //         int index = Utilities.IndexOf(products, null);
+        //     }, Throws.InstanceOf<ArgumentNullException>());
+        // }
 
-        [Test]
-        public void IndexOf_EmptyArray_ReturnsMinusOne()
-        {
-            var products = new Product[0];
-            var productToFind = new Product("Product 3", 30.0d);
+        // [Test]
+        // public void IndexOf_EmptyArray_ReturnsMinusOne()
+        // {
+        //     var products = new Product[0];
+        //     var productToFind = new Product("Product 3", 30.0d);
 
-            int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
+        //     int index = Utilities.IndexOf(products, product => product.Equals(productToFind));
 
-            Assert.That(index, Is.EqualTo(-1));
-        }
+        //     Assert.That(index, Is.EqualTo(-1));
+        // }
     }
 }

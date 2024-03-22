@@ -10,20 +10,29 @@ namespace Task1
         /// <param name="numbers">Numbers to sort.</param>
         public static void Sort(int[] numbers)
         {
+            // Проверка на то что не переда null
+            if (numbers == null)
+            {
+                // trow механиз ошибки
+                // new ArgumentNullException тип ошибки
+                // throw new ArgumentNullException(nameof(numbers));
+                throw new ArgumentNullException();
+            }
             int temp;
             for (int i = 0; i < numbers.Length; i++)
             {
                 for (int j = i; j < numbers.Length; j++)
                 {
-                    if (numbers[i] < numbers[j])
+                    if (numbers[i] > numbers[j])
                     {
-                        temp = numbers[i];
-                        numbers[i] = temp;
+                        temp = numbers[j];
                         numbers[j] = numbers[i];
+                        numbers[i] = temp;
                     }
                 }
             }
         }
+
 
         /// <summary>
         /// Searches for the index of a product in an <paramref name="products"/> 
