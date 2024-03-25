@@ -15,8 +15,8 @@ namespace Task1
             {
                 // trow механиз ошибки
                 // new ArgumentNullException тип ошибки
-                // throw new ArgumentNullException(nameof(numbers));
-                throw new ArgumentNullException();
+                throw new ArgumentNullException(nameof(numbers)); // Unhandled exception. System.ArgumentNullException: Value cannot be null. (Parameter 'numbers')
+                //throw new ArgumentNullException(); // Unhandled exception. System.ArgumentNullException: Value cannot be null.
             }
             int temp;
             for (int i = 0; i < numbers.Length; i++)

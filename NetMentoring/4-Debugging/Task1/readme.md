@@ -1,0 +1,1 @@
+dotnet add reference ..\Task1\Task1.csproj
