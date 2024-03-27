@@ -2,6 +2,9 @@
 **/bin
 **/obj
 
+# Visual studio
+**/.vs
+
 # Local .terraform directories
 **/.terraform/*
 
