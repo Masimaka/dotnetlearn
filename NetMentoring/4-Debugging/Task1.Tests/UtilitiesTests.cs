@@ -7,31 +7,31 @@ namespace Task1.Tests
     [TestFixture]
     public class Tests
     {
-        // [Test]
-        // public void Sort_Numbers_ReturnsAscendingSortedNumbers()
-        // {
-        //     int[] numbers = new[] { 4, 2, 1, 3, -5 };
+        [Test]
+        public void Sort_Numbers_ReturnsAscendingSortedNumbers()
+        {
+            int[] numbers = new[] { 4, 2, 1, 3, -5 };
 
-        //     Utilities.Sort(numbers);
+            Utilities.Sort(numbers);
 
-        //     CollectionAssert.AreEqual(new[] { -5, 1, 2, 3, 4 }, numbers);
-        // }
+            CollectionAssert.AreEqual(new[] { -5, 1, 2, 3, 4 }, numbers);
+        }
 
-        // [Test]
-        // public void Sort_Null_ThrowsArgumentNullException()
-        // {
-        //     Assert.That(() => Utilities.Sort(null), Throws.InstanceOf<ArgumentNullException>());
-        // }
+        [Test]
+        public void Sort_Null_ThrowsArgumentNullException()
+        {
+            Assert.That(() => Utilities.Sort(null), Throws.InstanceOf<ArgumentNullException>());
+        }
 
-        // [Test]
-        // public void Sort_EmptyArray_ReturnsEmptyArray()
-        // {
-        //     int[] numbers = new int[0];
+        [Test]
+        public void Sort_EmptyArray_ReturnsEmptyArray()
+        {
+            int[] numbers = new int[0];
 
-        //     Utilities.Sort(numbers);
+            Utilities.Sort(numbers);
 
-        //     CollectionAssert.AreEqual(new int[0], numbers);
-        // }
+            CollectionAssert.AreEqual(new int[0], numbers);
+        }
 
         [Test]
         public void IndexOf_Products_ReturnsTwo()
