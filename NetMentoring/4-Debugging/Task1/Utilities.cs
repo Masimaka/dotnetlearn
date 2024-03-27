@@ -43,16 +43,24 @@ namespace Task1
         /// <returns>If match found then returns index of product in <paramref name="products"/>
         /// otherwise -1.</returns>
         public static int IndexOf(Product[] products, Predicate<Product> predicate)
-        {
-            for (int i = 0; i < products.Length - 1; i++)
+        {   
+            if (products == null || predicate == null)
             {
-                var product = products[i - 1];
+                throw new ArgumentNullException(); 
+            }
+            for (int i = 0; i < products.Length; i++)
+            {
+                var product = products[i];
+                Console.WriteLine($"Product Name: {product.Name} {product.Price}");
+
+
+                var predicateResult = predicate(product);
+                Console.WriteLine($"Predicate for {product.Name} {product.Price} Result {predicateResult}");
                 if (predicate(product))
                 {
-                    return --i;
+                    return i;
                 }
             }
-
             return -1;
         }
     }
